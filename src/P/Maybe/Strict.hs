@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE DeriveDataTypeable #-}
 {-# LANGUAGE DeriveFoldable #-}
 {-# LANGUAGE DeriveGeneric #-}
@@ -15,6 +16,7 @@ module P.Maybe.Strict (
 import           Control.Applicative (Applicative(..), Alternative(..))
 import           Control.DeepSeq (NFData(..), rnf)
 import           Control.Monad (Monad(..), MonadPlus(..))
+import qualified Control.Monad.Fail as Fail
 
 import           Data.Bool (Bool(..))
 import           Data.Data (Data)
@@ -78,6 +80,11 @@ instance Monad Maybe' where
 
   return = Just'
 
+#if !(MIN_VERSION_base(4,13,0))
+  fail = Fail.fail
+#endif
+
+instance Fail.MonadFail Maybe' where
   fail _ = Nothing'
 
 instance NFData a => NFData (Maybe' a) where
