@@ -2,7 +2,8 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module P.Monad (
   -- * Functor and monad classes
-    Monad(..)
+    Monad((>>=), (>>), return)
+  , MonadFail (..)
   , MonadPlus(..)
 
   -- * Functions
@@ -56,6 +57,7 @@ import           Control.Monad (join, mfilter, filterM, mapAndUnzipM, zipWithM, 
 import           Control.Monad (foldM, foldM_, replicateM, replicateM_)
 import           Control.Monad (guard, when, unless)
 import           Control.Monad (liftM, liftM2, liftM3, liftM4, liftM5, ap)
+import           Control.Monad.Fail (MonadFail (..))
 
 import           Control.DeepSeq (NFData, force)
 import           Prelude (seq, (.))
