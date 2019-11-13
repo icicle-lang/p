@@ -12,6 +12,13 @@ description:           A set of standard preludes for Ambiata projects. \
                        Emphasis firstly on safety, and secondly on      \
                        consistency of core functions across projects.
 
+tested-with:
+  GHC==8.0.2,
+  GHC==8.2.2,
+  GHC==8.4.4,
+  GHC==8.6.5,
+  GHC==8.8.1
+
 library
   build-depends:
                           base                        >= 4.6        && < 5

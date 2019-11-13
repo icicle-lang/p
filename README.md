@@ -1,9 +1,9 @@
 p
 =
-[![Build Status](https://api.travis-ci.org/ambiata/p.svg?branch=master)](https://travis-ci.org/ambiata/p)
+[![Build Status](https://api.travis-ci.com/icicle-lang/p.svg?branch=master)](https://travis-ci.com/icicle-lang/p)
 
 ```
-The Ambiata Prelude. Short and sweet.
+The Icicle Language Prelude. Short and sweet.
 ```
 
 General rules.
