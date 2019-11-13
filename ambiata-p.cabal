@@ -1,6 +1,7 @@
 name:                  ambiata-p
 version:               0.0.1
-license:               AllRightsReserved
+license:               BSD3
+license-file:          LICENSE
 author:                Ambiata <info@ambiata.com>
 maintainer:            Ambiata <info@ambiata.com>
 copyright:             (c) 2015 Ambiata.
@@ -18,6 +19,10 @@ tested-with:
   GHC==8.4.4,
   GHC==8.6.5,
   GHC==8.8.1
+
+source-repository head
+  type:     git
+  location: https://github.com/icicle-lang/p.git
 
 library
   build-depends:
@@ -58,7 +63,7 @@ library
 test-suite test
   type:           exitcode-stdio-1.0
   main-is:        test.hs
-  ghc-options:    -Wall -threaded -O2
+  ghc-options:    -Wall -threaded
   hs-source-dirs: test
   build-depends:       base
                      , mtl                           >= 2.2

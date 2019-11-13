@@ -1,10 +1,11 @@
-p
-=
+<div align="center">
+
+# The Icicle Language Prelude.
+### Short and sweet.
+
 [![Build Status](https://api.travis-ci.com/icicle-lang/p.svg?branch=master)](https://travis-ci.com/icicle-lang/p)
 
-```
-The Icicle Language Prelude. Short and sweet.
-```
+</div>
 
 General rules.
 
