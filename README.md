@@ -3,7 +3,7 @@
 # The Icicle Language Prelude.
 ### Short and sweet.
 
-[![Build Status](https://api.travis-ci.com/icicle-lang/p.svg?branch=master)](https://travis-ci.com/icicle-lang/p)
+[![Build Status](https://github.com/icicle-lang/p/workflows/Haskell-CI/badge.svg)](https://github.com/icicle-lang/p/actions/workflows/haskell-ci.yml)
 
 </div>
 
