@@ -82,7 +82,7 @@ import           Data.Either as X hiding (
                    , rights
                    )
 import           Data.Int as X
-import           Data.Ord as X
+import           Data.Ord as X hiding (clamp)
 import           Data.Tuple as X
 import           Data.Traversable as X
 import           Data.Text as X (Text)
